@@ -1,0 +1,46 @@
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 150px;
+    z-index: -50;
+
+    div{
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
+        padding: 10px 10px;
+        position: relative;
+        z-index: -150;  
+
+        img{
+            width: 300px;
+            height: 300px;
+
+            &:hover{
+                cursor: pointer;
+                background-color: white;
+                opacity: 0.4;
+                transition: .3s;
+                z-index: 150;
+            }
+        }
+
+        p{
+            position: absolute;
+            width: 300px;
+            color: black; 
+            font-weight: bold;
+            font-size: 18px;
+            margin: -90px 2px;
+            z-index: 400;
+            text-align: left;
+        }
+
+        &:hover > p{
+            z-index: 400;
+            font-size: 19px;
+            cursor: pointer;
+        }
+    }
+}
