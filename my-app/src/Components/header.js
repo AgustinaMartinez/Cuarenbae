@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import logo from '../assets/logo.png';
-import bars from '../assets/bars.png';
+import logo from '../../public/Assets/logo.png';
+import bars from '../../public/Assets/bars.png';
 
 class Header extends Component{
     

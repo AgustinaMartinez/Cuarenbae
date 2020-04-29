@@ -1,12 +1,12 @@
 import React from 'react';
-import buyMasks from '../assets/buy-masks.jpg';
-import doctor from '../assets/doctor.jpg';
-import kidPlaying from '../assets/kid-playing.jpg';
-import mask from '../assets/mask.jpg';
-import socialMedia from '../assets/social-media.jpg';
-import work from '../assets/work.jpg';
-import workout from '../assets/workout.jpg';
-import zoom from '../assets/zoom.jpg';
+import buyMasks from '../../public/Assets/buy-masks';
+import doctor from '../../public/Assets/doctor.jpg';
+import kidPlaying from '../../public/Assets/kid-playing.jpg';
+import mask from '../../public/Assets/mask.jpg';
+import socialMedia from '../../public/Assets/social-media.jpg';
+import work from '../../public/Assets/work.jpg';
+import workout from '../../public/Assets/workout.jpg';
+import zoom from '../../public/Assets/zoom.jpg';
 
 function Images(){
     return(
