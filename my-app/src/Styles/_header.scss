@@ -4,59 +4,67 @@ header{
         width: 100%;
         height: 50px;
         background-color: #FFDCEE;
+        box-shadow: 0 3px 4px -2px rgba(0,0,0,.2);
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-        .icons{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            .bars{
+        &__button{
+            background-color: transparent;
+            border: transparent;
+    
+            &:active{
+                border: transparent;
+            }
+    
+            &__bars{
                 width: 20px;
                 height: 30px;
-                padding: 5px 10px;
+                margin: 10px 10px;
                 cursor: pointer;
-            }
-
-            .logo{
-                width: 200px;
-                height: 30px;
-                display:block;
-                margin: auto;
             }
         }
 
-        .navbar_menu{
-            background-color:white;
-            display: none;
-            flex-direction: column;
-            justify-content: flex-start;
-            padding: 0px 10px;
-            left: 0px;
-            height: 1000px;
-            width: 250px;
-            z-index: 100;
-            
-            li{
-                list-style-type: none;
+        &__logo{
 
-                a{
-                    display: block;
-                    padding: 5px 10px;
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: 20px;
-                    color: black;
-                    border: 0;
-                    background-image: linear-gradient(currentColor, currentColor);
-                    background-position: 0% 100%;
-                    background-repeat: no-repeat;
-                    background-size: 0% 2px;
-                    transition: background-size .3s;
+            width: 240px;
+            height: 40px;
+            position: fixed;
+            left: 555px;
+        }
 
-                    &:hover{
-                        color: #B00056;
-                        background-size: 100% 2px;
-                    }
+        &__container{
+
+            position: relative;
+
+            &__search{
+                position: absolute;
+                left: -140px;
+                z-index: 0;
+                width: 200px;
+                height: 25px;
+                padding: 5px;
+                margin: 6px -100px;
+                background-position: right;
+                background-repeat: no-repeat;
+                border: 1px solid #ccc;
+                border-radius: .1875rem;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                                            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+                                            'Helvetica Neue', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            &__img{
+                position: absolute;
+                left: -60px;
+                top: 15px;
+                z-index: 10;
+
+                &:hover{
+                    cursor: pointer;
                 }
             }
         }
