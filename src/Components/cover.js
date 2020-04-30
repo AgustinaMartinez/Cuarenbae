@@ -10,7 +10,10 @@ const Cover = () => {
         </h5>
         <p className="header__container__comment">María Ayuso</p>
       </div> 
-      <video className="header__video" src="https://d20x44kddxtp6m.cloudfront.net/wp-lanacionar/2020/04/29/5ea9dcefc9e77c0001f7ce9e/t_74ea791514be41f4a5c01237f7b56c34_name_LN___A_FONDO___TERAPIA_CUARENTENA_Apertura/file_1280x720-2000-v3_1.mp4"></video>
+      <video className="header__video" type="video/mp4" src="/Assets/cover_video.mp4" autoPlay loop>
+        <p className="header__video__comment">Video ilustrativo</p>
+      </video>
+      <a href="https://www.clima.com/argentina/cordoba/cordoba" className="header__weather"><img className="header__weather--img" src="https://w.bookcdn.com/weather/picture/4_18277_1_4_4615e8_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=582&anc_id=8929" alt="weather"></img></a>
       <img className="header__ads" src="/Assets/ads.png" alt="advertisement"></img>
     </header>
   );

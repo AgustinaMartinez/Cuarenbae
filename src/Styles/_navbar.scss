@@ -1,77 +1,132 @@
 .navbar{
-    width: 100%;
-    height: 50px;
-    background-color: #FFDCEE;
-    box-shadow: 0 3px 4px -2px rgba(0,0,0,.2);
     position: fixed;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 
-    &__button{
-        background-color: transparent;
-        border: transparent;
-
-        &:active{
-            border: transparent;
-        }
-
-        &__bars{
-            width: 20px;
-            height: 30px;
-            margin: 10px 10px;
-            cursor: pointer;
-        }
-    }
-
-    &__logo{
-
-        width: 240px;
-        height: 40px;
-        position: fixed;
-        left: 555px;
-    }
-
-    &__container{
-
-        position: relative;
-
-        &__search{
-            position: absolute;
-            left: -140px;
-            z-index: 0;
-            width: 200px;
-            height: 25px;
-            padding: 5px;
-            margin: 6px -100px;
-            background-position: right;
-            background-repeat: no-repeat;
-            border: 1px solid #ccc;
-            border-radius: .1875rem;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                                        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-                                        'Helvetica Neue', sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
+    &--1{
+        height: 50px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: rgb(92, 88, 88);
 
         &__button{
-
             background-color: transparent;
             border: transparent;
-
+    
             &:active{
                 border: transparent;
             }
-
-            &__img{
-                position: absolute;
-                left: -60px;
-                top: 15px;
-                z-index: 10;
     
-                &:hover{
-                    cursor: pointer;
+            &__bars{
+                width: 20px;
+                height: 30px;
+                margin: 10px 10px;
+                cursor: pointer;
+            }
+        }
+    
+        &__logo{
+            width: 240px;
+            height: 40px;
+            position: fixed;
+            left: 555px;
+        }
+    
+        &__container{
+    
+            position: relative;
+    
+            &__search{
+                position: absolute;
+                left: -140px;
+                z-index: 0;
+                width: 200px;
+                height: 25px;
+                padding: 5px;
+                margin: 6px -100px;
+                background-position: right;
+                background-repeat: no-repeat;
+                border: 1px solid #ccc;
+                border-radius: .1875rem;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                                            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+                                            'Helvetica Neue', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+    
+            &__button{
+    
+                background-color: transparent;
+                border: transparent;
+    
+                &:active{
+                    border: transparent;
+                }
+    
+                &__img{
+                    position: absolute;
+                    left: -60px;
+                    top: 15px;
+                    z-index: 10;
+        
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    &--2{
+        height: 30px;
+        background-color: rgb(241, 239, 239);
+        box-shadow: 0 4px 5px -1px rgba(0,0,0,.2);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            &--item{
+                list-style-type: none;
+                font-size: 16px;
+                padding: 2px 55px;
+
+                &fecha{
+                    color: rgb(117, 93, 93);
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                &--color{
+                    color:red;
+                }
+
+                span{
+                    font-weight: bold;
+                }
+                
+                &--link{
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    color: black;
+                    border: 0;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+    
+                    &:hover{
+                        color: #B00056;
+                        background-size: 100% 2px;
+                    }
                 }
             }
         }
