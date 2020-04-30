@@ -1,0 +1,63 @@
+.header{
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: -100;
+
+    &__container{
+        position: relative;
+        top: 80px;
+        left: 30px;
+        width: 360px;
+
+        &__title{
+            padding: 10px 20px;
+
+            &:hover{
+                cursor: pointer;
+                color: blue;
+            }
+
+            &--color{
+                color: blue;
+            }
+        }
+    
+        &__subtitle{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 10px 20px;
+        }
+    
+        &__comment{
+            font-family: 12px;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+    }
+    
+    &__video{
+        position: relative;
+        top: 20px;
+        width: 700px;
+        height: 400px;
+        padding: 10px 30px 0 50px;
+    }
+
+    &__ads{
+        position: relative;
+        top: 94px;
+        right: 0px;
+        width: 300px;
+        height: 600px;
+        padding: 10px 30px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

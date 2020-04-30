@@ -1,18 +1,20 @@
 import React from 'react';
-import Header from './Components/header';
+import Navbar from './Components/navbar';
+import Cover from './Components/cover';
 import Images from './Components/images';
 import './App.scss';
 
-function HelloWorld() {
+const HelloWorld = () => {
   return (
     <div>25°C</div>
   );
 }
 
-function App() {
+const App = () => {
   return (
     <div>
-      <Header/>
+      <Navbar/>
+      <Cover/>
       <div>Córdoba, 27 de abril del 2020 <HelloWorld/></div>
       <Images/>
     </div>

@@ -1,7 +1,9 @@
-@import './Styles/header';
-@import './Styles/images';
+@import './Styles/navbar';
 @import './Styles/menu';
+@import './Styles/cover';
+@import './Styles/images';
 
-div{
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
