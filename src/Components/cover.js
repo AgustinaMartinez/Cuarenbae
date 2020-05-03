@@ -1,6 +1,7 @@
 import React from 'react';
+import '../App.scss';
 
-const Cover = () => {
+const cover = () => {
   return (
     <header className="header">
       <div className="header__container">
@@ -19,4 +20,4 @@ const Cover = () => {
   );
 }
 
-export default Cover;
+export default cover;

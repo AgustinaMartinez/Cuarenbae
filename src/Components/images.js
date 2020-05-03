@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.scss';
 // import buyMasks from '/Assets/buy-masks';
 // import doctor from '/Assets/doctor.jpg';
 // import kidPlaying from '/Assets/kid-playing.jpg';
@@ -8,7 +9,7 @@ import React from 'react';
 // import workout from '/Assets/workout.jpg';
 // import zoom from '/Assets/zoom.jpg';
 
-function Images(){
+const images = () => {
     return(
       <div className="images">
           <div className="images__buy-masks"><img alt="buy-masks" src="/Assets/buy-masks.jpg"/><p>Vendedores ambulantes pasan de vender juguetes y medias a vender barbijos y alcohol en gel.</p></div>
@@ -23,4 +24,4 @@ function Images(){
     )
 }
 
-export default Images;
+export default images;
