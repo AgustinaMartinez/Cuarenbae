@@ -7,17 +7,15 @@
     height: 100%;
     width: 70%;
     max-width: 300px;
-    z-index: 200;
+    //z-index: 200;
 
     &__button{
-
         background-color: transparent;
         border: transparent;
         margin-top: 5px;
         margin-right: -220px; 
 
-        &__icon{
-           
+        &__icon{ 
             width: 30px;
             height: 30px;
         }

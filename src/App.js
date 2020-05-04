@@ -7,31 +7,31 @@ import Images from './Components/images';
 
 class App extends Component {
 
-  state = {
-    MenuVisible: false,
-    Search: false
-  }
+  // state = {
+  //   MenuVisible: false,
+  //   Search: false
+  // }
 
-  showMenu = () => {
-    this.setState((prevState) => {
-      return {MenuVisible: !prevState.MenuVisible}
-    });
-  }
+  // showMenu = () => {
+  //   this.setState((prevState) => {
+  //     return {MenuVisible: !prevState.MenuVisible}
+  //   });
+  // }
 
   render(){
-    let menu;
-    let backdrop;
+    // let menu;
+    // //let backdrop;
 
-    if(!this.state.MenuVisible === true){
-      menu = <Menu/>;
-      backdrop = <Backdrop/>;
-    }
+    // if(this.state.MenuVisible === true){
+    //   menu = <Menu/>;
+    //   //backdrop = <Backdrop/>;
+    // }
 
     return (
       <div>
-        <Navbar showMenu={this.showMenu}/>
-        {menu}
-        {backdrop}
+        <Navbar />
+        <Menu/>
+        <Backdrop/>
         <Cover/>
         <Images/>
       </div>

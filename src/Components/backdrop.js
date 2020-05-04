@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.scss';
+import '../Styles/_backdrop.scss';
 
 const backdrop = props => (
     <div className="backdrop"></div>
