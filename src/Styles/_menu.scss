@@ -1,71 +1,146 @@
-.menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color:white;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 70%;
-    max-width: 300px;
-    z-index: 300;
-    transition: all 0.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    &__button{
-        background-color: transparent;
-        border: transparent;
-        width: 2rem;
-        height: 2rem;
-        margin: -2rem 0.5rem;
-
-        &__icon{ 
-            width: 100%;
-            height: 100%;
-        }
-
-        &:hover{
-            cursor: pointer;
-        }
-    }
-    
-    &__list{
+@media only screen and (min-width: 320px){
+    .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color:white;
+        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 70%;
+        z-index: 300;
+        transition: all 0.5s;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+    
+        &__button{
+            background-color: transparent;
+            border: transparent;
+            width: 6rem;
+            height: 6rem;
+            margin: 2rem;
+    
+            &__icon{ 
+                width: 100%;
+                height: 100%;
+            }
+    
+            &:hover{
+                cursor: pointer;
+            }
+        }
         
-        li{
-            list-style-type: none;
-            text-align: center;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-            'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-    
-            a{
-                display: block;
-                padding: 5px 10px;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 1.2rem;
-                color: black;
-                background-image: linear-gradient(currentColor, currentColor);
-                background-position: 0% 100%;
-                background-repeat: no-repeat;
-                background-size: 0% 2px;
-                transition: background-size .3s;
-    
-                &:hover, &:active{
-                    color: #B00056;
-                    background-size: 100% 2px;
+        &__list{
+            display: flex;
+            flex-direction: column;
+            
+            li{
+                list-style-type: none;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+                'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+        
+                a{
+                    display: block;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    color: black;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+        
+                    &:hover, &:active{
+                        color: #B00056;
+                        background-size: 100% 2px;
+                    }
                 }
             }
         }
+    
+        &__logo{
+            margin-left: 40%;
+            height: 50px;
+            width: 50px;
+        }
     }
+}
 
-    &__logo{
-        margin-left: 40%;
-        height: 50px;
-        width: 50px;
+@media only screen and (min-width: 700px){
+    .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color:white;
+        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 70%;
+        max-width: 300px;
+        z-index: 300;
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        &__button{
+            background-color: transparent;
+            border: transparent;
+            width: 2rem;
+            height: 2rem;
+            margin: -2rem 0.5rem;
+    
+            &__icon{ 
+                width: 100%;
+                height: 100%;
+            }
+    
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        
+        &__list{
+            display: flex;
+            flex-direction: column;
+            
+            li{
+                list-style-type: none;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+                'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+        
+                a{
+                    display: block;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    color: black;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+        
+                    &:hover, &:active{
+                        color: #B00056;
+                        background-size: 100% 2px;
+                    }
+                }
+            }
+        }
+    
+        &__logo{
+            margin-left: 40%;
+            height: 50px;
+            width: 50px;
+        }
     }
 }

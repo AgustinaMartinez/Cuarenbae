@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   hideMenu = () => {
-    this.setState({MenuVisible: false})
+    this.setState({MenuVisible: false});
   }
 
   render(){

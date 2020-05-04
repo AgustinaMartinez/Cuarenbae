@@ -1,37 +1,67 @@
-.aside{
-    position: relative;
-    right: 10px;
-    top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    &__weather{
-
-        &--img{
+@media only screen and (min-width: 700px){
+    .aside{
+        position: relative;
+        left: 69rem;
+        top: 10px;
+        width: 250px;
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        &__weather{
+    
+            &--img{
+                position: absolute;
+                top: 94px;
+                right: 0;
+                padding: 10px 30px;
+                width: 200px;
+                height: 250px;
+        
+                &:hover{
+                    cursor: pointer;
+                }
+            }       
+        }
+        
+        &__ads{
             position: absolute;
-            top: 94px;
+            top: 380px;
+            right: 0;
+            width: 200px;
+            height: 600px;
+            padding: 10px 30px;
+        
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    
+        &__ads2{
+            position: absolute;
+            top: 1010px;
             right: 0;
             padding: 10px 30px;
             width: 200px;
-            height: 250px;
+            height: 500px;
     
             &:hover{
                 cursor: pointer;
             }
-        }       
-    }
+        }
     
-    &__ads{
-        position: absolute;
-        top: 370px;
-        right: 0;
-        width: 200px;
-        height: 600px;
-        padding: 10px 30px;
+        &__ads3{
+            position: absolute;
+            top: 1560px;
+            right: 0;
+            padding: 10px 30px;
+            width: 200px;
+            height: 100px;
     
-        &:hover{
-            cursor: pointer;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 }
