@@ -1,0 +1,87 @@
+.footer{
+    box-shadow: 0px 0 3px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: -85rem;
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 5rem;
+        margin-top: 1rem;
+        box-shadow: 0 5px 6px -8px black;
+        -webkit-box-shadow: 0 5px 6px -8px black;
+	    -moz-box-shadow: 0 5px 6px -8px black;
+
+        &__icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 200px;
+
+            img:hover{
+                background-color: rgb(247, 166, 205);
+                border-radius: 50%;
+            }
+            
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &__logo{
+            width: 150px;
+            height: 30px;
+        }
+
+        &__gp{
+            margin-right: 1rem;
+            width: 100px;
+            height: 30px;
+        }
+    }
+
+    &__end{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+
+        &__links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            a{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-decoration: none;
+                color: #B00056;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+
+                &:hover, &:active{
+                    background-size: 100% 2px;
+                }
+            }
+        }
+
+        &__comment{
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+            font-size: 1rem;
+            margin-left: 1.5rem;
+
+            &--bold{
+                font-weight: bold;
+            }
+        }
+    }
+}

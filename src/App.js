@@ -5,6 +5,7 @@ import Backdrop from './Components/backdrop';
 import Cover from './Components/cover';
 import Aside from './Components/aside';
 import SectionOne from './Components/section-one';
+import Footer from './Components/footer';
 
 class App extends Component {
 
@@ -40,6 +41,7 @@ class App extends Component {
         <Cover/>
         <Aside/>
         <SectionOne/>
+        <Footer/>
       </div>
     );
   }  
