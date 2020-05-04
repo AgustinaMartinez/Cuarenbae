@@ -1,0 +1,50 @@
+.articles{
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    grid-template-rows: 400px 400px;
+    gap: 1em 3em;
+    position: absolute;
+    top: 460px;
+    left: 40px;
+    z-index: -50;
+
+    div{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: -150;
+
+        &:hover{
+            cursor: pointer;
+            background-color: white;
+            opacity: 0.8;
+            transition: .4s;
+            z-index: 150;
+        }
+
+        img{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 300px;
+        }
+
+        p{
+            position: absolute;
+            top: 305px;
+            width: 100%;
+            color: black; 
+            font-weight: bold;
+            font-size: 18px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+            'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-align: left;
+
+            span{
+                color: blue;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.aside{
+    position: relative;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__weather{
+
+        &--img{
+            position: absolute;
+            top: 94px;
+            right: 0;
+            padding: 10px 30px;
+            width: 200px;
+            height: 250px;
+    
+            &:hover{
+                cursor: pointer;
+            }
+        }       
+    }
+    
+    &__ads{
+        position: absolute;
+        top: 370px;
+        right: 0;
+        width: 200px;
+        height: 600px;
+        padding: 10px 30px;
+    
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

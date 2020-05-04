@@ -3,37 +3,43 @@ import Navbar from './Components/navbar';
 import Menu from './Components/menu';
 import Backdrop from './Components/backdrop';
 import Cover from './Components/cover';
-import Images from './Components/images';
+import Aside from './Components/aside';
+import SectionOne from './Components/section-one';
 
 class App extends Component {
 
-  // state = {
-  //   MenuVisible: false,
-  //   Search: false
-  // }
+  state = {
+    MenuVisible: false,
+    Search: false
+  }
 
-  // showMenu = () => {
-  //   this.setState((prevState) => {
-  //     return {MenuVisible: !prevState.MenuVisible}
-  //   });
-  // }
+  showMenu = () => {
+    this.setState((prevState) => {
+      return {MenuVisible: !prevState.MenuVisible}
+    });
+  }
+
+  hideMenu = () => {
+    this.setState({MenuVisible: false})
+  }
 
   render(){
-    // let menu;
-    // //let backdrop;
+    let menu;
+    let backdrop;
 
-    // if(this.state.MenuVisible === true){
-    //   menu = <Menu/>;
-    //   //backdrop = <Backdrop/>;
-    // }
+    if(this.state.MenuVisible === true){
+      menu = <Menu hideMenu={this.hideMenu}/>;
+      backdrop = <Backdrop/>;
+    }
 
     return (
       <div>
-        <Navbar />
-        <Menu/>
-        <Backdrop/>
+        <Navbar showMenu={this.showMenu}/>
+        {menu}
+        {backdrop}
         <Cover/>
-        <Images/>
+        <Aside/>
+        <SectionOne/>
       </div>
     );
   }  
