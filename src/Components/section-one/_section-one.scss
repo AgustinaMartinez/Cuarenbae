@@ -3,7 +3,6 @@
         position: absolute;
         top: 460px;
         left: 40px;
-        z-index: -50;
 
         &__title{
             display: none;
@@ -21,7 +20,6 @@
                 position: relative;
                 display: flex;
                 flex-direction: column;
-                z-index: -150;
         
                 &:hover{
                     cursor: pointer;

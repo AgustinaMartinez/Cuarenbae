@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Navbar from './Components/navbar/navbar';
 import Menu from './Components/menu/menu';
 import Backdrop from './Components/backdrop/backdrop';
@@ -7,36 +7,34 @@ import Aside from './Components/aside/aside';
 import SectionOne from './Components/section-one/section-one';
 import Footer from './Components/footer/footer';
 
-class App extends Component {
+const App = () => {
 
-  state = {
-    MenuVisible: false,
-    Search: false
-  };
+  const [state, setState] = useState({
+      MenuVisible: false,
+      Search: false
+  });
 
-  showMenu = () => {
-    this.setState((prevState) => {
+  const showMenu = () => {
+    setState((prevState) => {
       return {MenuVisible: !prevState.MenuVisible}
     });
   }
 
-  hideMenu = () => {
-    this.setState({MenuVisible: false});
+  const hideMenu = () => {
+    setState({MenuVisible: false});
   }
 
-  render(){
-    return (
-      <div>
-        <Navbar showMenu={this.showMenu}/>
-        {this.state.MenuVisible && <Menu hideMenu={this.hideMenu}/>}
-        {this.state.MenuVisible && <Backdrop/>}
-        <Cover/>
-        <Aside/>
-        <SectionOne/>
-        <Footer/>
-      </div>
-    );
-  }  
+  return (
+    <div>
+      <Navbar showMenu={showMenu}/>
+      {state.MenuVisible && <Menu hideMenu={hideMenu}/>}
+      {state.MenuVisible && <Backdrop/>}
+      <Cover/>
+      <Aside/>
+      <SectionOne/>
+      <Footer/>
+    </div>
+  );
 }
 
 export default App;
