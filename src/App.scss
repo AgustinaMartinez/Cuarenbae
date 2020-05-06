@@ -1,10 +1,10 @@
-@import './Styles/navbar';
-@import './Styles/menu';
-@import './Styles/cover';
-@import './Styles/aside';
-@import './Styles/section-one';
-@import './Styles/footer';
-@import './Styles/backdrop';
+@import './Components/navbar/navbar';
+@import './Components/menu/menu';
+@import './Components/cover/cover';
+@import './Components/aside/aside';
+@import './Components/section-one/section-one';
+@import './Components/footer/footer';
+@import './Components/backdrop/backdrop';
 
 *{
     margin: 0;

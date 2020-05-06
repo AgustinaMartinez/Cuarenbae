@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/_cover.scss';
+import '../cover/_cover.scss';
 
 const cover = () => (
   <header className="header">

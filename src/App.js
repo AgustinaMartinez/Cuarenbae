@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import Navbar from './Components/navbar';
-import Menu from './Components/menu';
-import Backdrop from './Components/backdrop';
-import Cover from './Components/cover';
-import Aside from './Components/aside';
-import SectionOne from './Components/section-one';
-import Footer from './Components/footer';
+import Navbar from './Components/navbar/navbar';
+import Menu from './Components/menu/menu';
+import Backdrop from './Components/backdrop/backdrop';
+import Cover from './Components/cover/cover';
+import Aside from './Components/aside/aside';
+import SectionOne from './Components/section-one/section-one';
+import Footer from './Components/footer/footer';
 
 class App extends Component {
 
   state = {
     MenuVisible: false,
     Search: false
-  }
+  };
 
   showMenu = () => {
     this.setState((prevState) => {
@@ -25,19 +25,11 @@ class App extends Component {
   }
 
   render(){
-    let menu;
-    let backdrop;
-
-    if(this.state.MenuVisible === true){
-      menu = <Menu hideMenu={this.hideMenu}/>;
-      backdrop = <Backdrop/>;
-    }
-
     return (
       <div>
         <Navbar showMenu={this.showMenu}/>
-        {menu}
-        {backdrop}
+        {this.state.MenuVisible && <Menu hideMenu={this.hideMenu}/>}
+        {this.state.MenuVisible && <Backdrop/>}
         <Cover/>
         <Aside/>
         <SectionOne/>

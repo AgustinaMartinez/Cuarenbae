@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/_aside.scss';
+import '../aside/_aside.scss';
 
 const aside = () => (
     <aside className="aside">
