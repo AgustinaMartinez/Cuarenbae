@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "src": "/Assets/buy-masks.jpg",
+        "title": "Crisis.",
+        "comment": "Vendedores ambulantes pasan de vender juguetes y medias a vender barbijos y alcohol en gel.",
+        "alt": "buy masks"
+    },
+    {
+        "id": 2,
+        "src": "/Assets/doctor.jpg",
+        "title": "Orgullo.",
+        "comment": "Vecinos de Nueva Córdoba salen a sus balcones a aplaudir a los profesionales de la salud.",
+        "alt": "doctor"
+    },
+    {
+        "id": 3,
+        "src": "/Assets/kid-playing.jpg",
+        "title": "Dispersión.",
+        "comment": "Niños de España pueden salir a jugar y pasear por una hora con la supervisión de un solo adulto.",
+        "alt": "kid playing"
+    },
+    {
+        "id": 4,
+        "src": "/Assets/mask.jpg",
+        "title": "Ahorro.",
+        "comment": "Te mostramos los moldes para hacer tus propios tapabocas: todos los tamaños y colores.",
+        "alt": "mask"
+    },
+    {
+        "id": 5,
+        "src": "/Assets/social-media.jpg",
+        "title": "Social.",
+        "comment": "Estudio revela que se multiplicó el uso de las redes sociales durante la cuarentena.",
+        "alt": "social media"
+    },
+    {
+        "id": 6,
+        "src": "/Assets/work.jpg",
+        "title": "Trabajo.",
+        "comment": "Tips para trabajar desde casa: las empresas buscan implementar el Work From Home.",
+        "alt": "work"
+    },
+    {
+        "id": 7,
+        "src": "/Assets/workout.jpg",
+        "title": "Salud.",
+        "comment": "Cómo seguir saludable: la actividad física se ha reducido en un 40% desde la pandemia.",
+        "alt": "workout"
+    },
+    {
+        "id": 8,
+        "src": "/Assets/zoom.jpg",
+        "title": "Educación.",
+        "comment": "Las universidades y empresas buscan estar comunicados a través de la plataforma Zoom.",
+        "alt": "zoom"
+    },
+    {
+        "id": 9,
+        "src": "/Assets/closed-store.jpg",
+        "title": "Economía.",
+        "comment": "Comerciantes preocupados por el cierre de sus locales durante la cuarentena.",
+        "alt": "closed store"
+    }
+]
