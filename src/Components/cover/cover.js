@@ -11,7 +11,7 @@ const cover = () => (
       <p className="header__container__comment">Por María Ayuso</p>
     </div> 
     <video className="header__video" type="video/mp4" src="/Assets/cover_video.mp4" autoPlay loop></video>
-    <p className="header__comment">Video ilustrativo</p>
+    <a href="https://www.clima.com/argentina/cordoba/cordoba" className="header__weather"><img className="header__weather__img" src="https://w.bookcdn.com/weather/picture/4_18277_1_4_4615e8_160_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=582&anc_id=8929" alt="weather"></img></a>
   </header>
 );
 

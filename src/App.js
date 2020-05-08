@@ -4,7 +4,6 @@ import Podcast from './Pages/podcast';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 const App = () => {
-
   return (
     <Router>
       <Route exact path="/" component={Home}/>

@@ -1,74 +1,3 @@
-@media only screen and (min-width: 700px){
-    .header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
-    
-        &__container{
-            position: absolute;
-            top: 90px;
-            left: 20px;
-            width: 300px;
-    
-            &__link{
-                text-decoration: none;
-                color: #000000;
-    
-                &__title{
-                    padding: 10px 20px;
-                    letter-spacing: normal;
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-                    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-        
-                    &:hover{
-                        cursor: pointer;
-                        color: rgb(58, 53, 53);
-                    }
-        
-                    &--color{
-                        color: blue;
-                    }
-                }
-            }
-        
-            &__subtitle{
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                padding: 10px 20px;
-            }
-        
-            &__comment{
-                font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-                font-size: 12px;
-                font-weight: bold;
-                padding: 10px 20px;
-            }
-        }
-        
-        &__video{
-            position: absolute;
-            top: 110px;
-            left: 310px;
-            width: 750px;
-            padding: 10px 10px;
-        }
-    
-        &__comment{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 12px;
-            color: rgb(58, 53, 53);
-            position: absolute;
-            top: 400px;
-            left: 970px;
-        }
-    }
-}
-
 @media only screen and (max-width: 699px){
     .header{
         display: flex;
@@ -127,9 +56,111 @@
             width: 100%;
             padding: 10px 10px;
         }
+
+        &__weather{
+            display: none;      
+        }
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40%;
+        width: 100%;
     
-        &__comment{
-            display: none;
+        &__container{
+            width: 25%;
+    
+            &__link{
+                text-decoration: none;
+                color: #000000;
+    
+                &__title{
+                    padding: 10px 20px;
+                    letter-spacing: normal;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+                    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+        
+                    &:hover{
+                        cursor: pointer;
+                        color: rgb(58, 53, 53);
+                    }
+        
+                    &--color{
+                        color: blue;
+                    }
+                }
+            }
+        
+            &__subtitle{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                padding: 10px 20px;
+            }
+        
+            &__comment{
+                font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 10px 20px;
+            }
+        }
+        
+        &__video{
+            width: 55%;
+            margin-left: -2rem;
+        }
+
+        &__weather{
+            padding: 2rem 1.5rem;
+            width: 15%;
+            height: 15rem;
+
+            &__img{
+                width: 100%;
+                height: 100%;
+            }       
+        }
+    }
+}
+
+@media only screen and (min-width: 1750px){
+    .header{
+
+        &__container{
+            width: 25%;
+    
+            &__link{
+    
+                &__title{
+                    font-size: 3rem;
+                }
+            }
+        
+            &__subtitle{
+                font-size: 2rem;
+            }
+        
+            &__comment{
+                font-size: 1rem;
+            }
+        }
+        
+        &__video{
+            width: 53%;
+        }
+
+        &__weather{
+            padding: 2rem 1.5rem;
+            width: 16%;
+            height: 28rem;     
         }
     }
 }

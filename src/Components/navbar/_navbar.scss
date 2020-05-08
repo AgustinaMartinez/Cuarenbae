@@ -1,6 +1,5 @@
 @media only screen and (min-width: 700px){
     .navbar {
-        position: fixed;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -36,20 +35,15 @@
             &__logo{
                 width: 240px;
                 height: 40px;
-                position: fixed;
+                position: sticky;
                 left: 555px;
                 top: 5px;
             }
         
             &__container{
-        
-                position: relative;
+                margin: 0.3rem 3.5rem;
         
                 &__search{
-                    position: fixed;
-                    right: 30px;
-                    top: 5px;
-                    z-index: 0;
                     width: 130px;
                     height: 25px;
                     padding: 6px 15px 6px 5px;
@@ -71,9 +65,7 @@
                 }
         
                 &__button{
-                    position: absolute;
-                    right: 40px;
-                    top: 15px;
+                    margin: 0 -1.6rem;
                     background-color: transparent;
                     border: transparent;
                     width: 1.2rem;
@@ -84,9 +76,6 @@
                     }
         
                     &__img{
-                        position: relative;
-                        right: 0;
-                        z-index: 10;
                         width: 100%;
                         height: 100%;
             
@@ -99,10 +88,10 @@
         }
     
         &__2{
-            height: 30px;
+            height: 2rem;
+            width: 100%;
             background-color: rgb(241, 239, 239);
             box-shadow: 0 4px 5px -1px rgba(0,0,0,.2);
-    
     
             &__list{
                 display: flex;

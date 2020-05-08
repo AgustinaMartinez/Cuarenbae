@@ -4,6 +4,7 @@ import news from '../../Sample/news.json';
 
 const sectionOne = () => (
   <section className="articles">
+    <h3 className="articles__title">Noticias</h3>
     <div className="articles__container">
       {news.map(item => {
         return (    

@@ -1,8 +1,7 @@
-import React, { useState, Fragment } from 'react';
+import React, {useState} from 'react';
 import Navbar from '../navbar/navbar';
 import Menu from '../menu/menu';
 import Backdrop from '../backdrop/backdrop';
-import Footer from '../footer/footer';
 
 const Layout = (props) => {
 
@@ -18,14 +17,13 @@ const Layout = (props) => {
         setMenu(false);
     }
 
-    return (
-        <Fragment>
-            <Navbar showMenu={showMenu}/>
-            {menu && <Menu hideMenu={hideMenu}/>}
-            {menu && <Backdrop/>}
-            <Footer/>
+    return(
+        <div className="layout">
+            <Navbar className="layout__navbar" showMenu={showMenu}/>
+            {menu && <Menu className="layout__menu" hideMenu={hideMenu}/>}
+            {menu && <Backdrop className="layout__backdrop"/>}
             {props.children}
-        </Fragment> 
+        </div>
     )
 }
 
