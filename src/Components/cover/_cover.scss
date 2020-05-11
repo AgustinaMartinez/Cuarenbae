@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
+
 @media only screen and (max-width: 699px){
     .header{
         display: flex;
@@ -119,14 +122,70 @@
         }
 
         &__weather{
-            padding: 2rem 1.5rem;
-            width: 15%;
-            height: 15rem;
-
-            &__img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-radius: 10%;
+            box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+            background: rgb(208,223,222);
+            background: linear-gradient(0deg, rgba(208,223,222,1) 0%, rgba(221,254,255,1) 16%, rgba(138,221,223,1) 35%, rgba(127,236,216,1) 54%, rgba(102,204,231,1) 77%, rgba(4,34,43,100) 100%);
+            width: 12rem;
+            height: 17rem;
+            margin: 2rem;
+        
+            &__one{
                 width: 100%;
-                height: 100%;
-            }       
+                height: 3rem;
+        
+                &__title{
+                    font-family: 'Bebas Neue', cursive;
+                    color: rgb(250, 221, 221);
+                    letter-spacing: 5px;
+                    margin-top: 0.7rem;
+                }
+            }
+            
+            &__two{
+                
+                font-family: 'Cabin Condensed', sans-serif;
+                height: 5rem;
+                
+                &__temp{
+                    font-size: 2rem;
+                }
+            }
+            
+            &__three{
+                font-family: 'Cabin Condensed', sans-serif;
+            }
+
+            &__button{
+                margin-top: 1.5rem;
+                background:linear-gradient(to bottom, #000000 5%, #2ebabf 100%);
+                background-color:#000000;
+                border-radius:20px;
+                border:2px solid #ffffff;
+                display:inline-block;
+                color:#ffffff;
+                font-family:Verdana;
+                font-size:12px;
+                width: 8rem;
+                padding: 0.5rem;
+                text-decoration:none;
+                text-shadow:0px 1px 0px #2f6627;
+
+                &:hover {
+                    cursor:pointer;
+                    background:linear-gradient(to bottom, #2ebabf 5%, #000000 100%);
+                    background-color:#2ebabf;
+                }
+
+                &:active {
+                    position:relative;
+                    top:1px;
+                }
+            }
         }
     }
 }

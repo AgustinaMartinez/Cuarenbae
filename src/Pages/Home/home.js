@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../Components/layout/layout';
-import Cover from '../Components/cover/cover';
-import Aside from '../Components/aside/aside';
-import SectionOne from '../Components/section-one/section-one';
-import Footer from '../Components/footer/footer';
+import Layout from '../../Components/layout/layout';
+import Cover from '../../Components/cover/cover';
+import Aside from '../../Components/aside/aside';
+import SectionOne from '../../Components/section-one/section-one';
+import Footer from '../../Components/footer/footer';
 import './_home.scss';
 
 const Home = () => (

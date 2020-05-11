@@ -18,7 +18,7 @@ const header = props => (
         </div>
         <div className="navbar__2">
             <ul className="navbar__2__list">
-                <li className="navbar__2__list__item fecha"> Jueves 7 de mayo de 2020 </li>
+                <li className="navbar__2__list__item fecha"> Lunes 11 de mayo de 2020 </li>
                 <li className="navbar__2__list__item"><span className="navbar--2__list__item--color"> Dólar </span> BNA: <span>$63,75 / $68,75</span> Blue: <span>$108,00 / $118,00</span></li>
                 <li className="navbar__2__list__item"><a href="/podcasts" className="navbar__2__list__item--link">Podcasts Infobae</a></li>
                 <li className="navbar__2__list__item"><a href="https://www.infobae.com/newsletter/" className="navbar__2__list__item--link">Registrate al Newsletter</a></li>
