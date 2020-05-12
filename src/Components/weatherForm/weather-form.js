@@ -16,11 +16,13 @@ const WeatherForm = props => {
 
         console.log(cityValue)
         console.log(countryValue)
+
+        props.setButtonClicked(true);
             
         const res = await fetch(`${configApiWeather.url}?q=${cityValue}&${countryValue}&lang=${configApiWeather.lang}&units=${configApiWeather.units}&appid=${configApiWeather.api_key}`);
         const data = await res.json();
 
-        console.log(data)
+        props.setClimate(data)
     }
 
     return (
