@@ -8,6 +8,7 @@
         },
         "weather": [
             {
+                "id": 800,
                 "description": "precipitaciones"
             }
         ],
@@ -22,6 +23,7 @@
             },
         "weather": [
             {
+                "id": 800,
                 "description": "cielo nublado"
             }
         ],

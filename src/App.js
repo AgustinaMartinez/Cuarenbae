@@ -1,7 +1,7 @@
 import React from 'react';
-import Home from '../src/Pages/Home/home';
-import {} from './Components/weatherForm/form';
-import Podcast from '../src/Pages/Podcast/podcast';
+import Home from './Pages/Home/home';
+import Podcast from './Pages/Podcast/podcast';
+import WeatherPage from './Pages/Weather';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 const App = () => {
@@ -9,6 +9,7 @@ const App = () => {
     <Router>
       <Route exact path="/" component={Home}/>
       <Route exact path="/podcasts" component={Podcast}/>
+      <Route exact path="/weather" component={WeatherPage}/>
     </Router>
   );
 }

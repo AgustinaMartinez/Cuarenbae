@@ -1,0 +1,45 @@
+@import '../../Styles-patterns/patterns';
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    background: rgb(213,236,235);
+    background: linear-gradient(0deg, rgba(213,236,235,1) 0%, rgba(182,237,238,1) 16%, rgba(203,249,240,1) 37%, rgba(162,223,241,1) 63%, rgba(4,34,43,1) 100%);
+    width: 12rem;
+    height: 17rem;
+    margin: 2rem;
+
+    &__one{
+        width: 100%;
+        height: 3rem;
+
+        &__title{
+            font-family: 'Bebas Neue', cursive;
+            color: rgb(250, 221, 221);
+            letter-spacing: 6px;
+            margin-top: 0.7rem;
+        }
+    }
+    
+    &__two{
+        
+        font-family: 'Cabin Condensed', sans-serif;
+        height: 5rem;
+        
+        &__temp{
+            font-size: 2rem;
+        }
+    }
+    
+    &__three{
+        font-family: 'Cabin Condensed', sans-serif;
+    }
+
+    &__button{
+        @extend %buttonWidget;
+    }
+}

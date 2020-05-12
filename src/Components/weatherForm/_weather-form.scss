@@ -1,0 +1,8 @@
+@import '../../Styles-patterns/patterns';
+
+.container{
+
+    &__form{
+        @extend %weatherContainer;
+    }
+}

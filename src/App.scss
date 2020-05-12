@@ -2,11 +2,13 @@
 @import './Components/menu/menu';
 @import './Components/cover/cover';
 @import './Components/aside/aside';
+@import './Components/weather-widget/weather';
 @import './Components/section-one/section-one';
 @import './Components/footer/footer';
 @import './Components/backdrop/backdrop';
 @import '../src/Pages/Home/home';
 @import './Components/layout/layout';
+@import '../src/Pages/Weather/weather-page';
 
 *{
     margin: 0;

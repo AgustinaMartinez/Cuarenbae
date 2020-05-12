@@ -1,0 +1,6 @@
+@import '../../Styles-patterns/patterns';
+
+.container2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    @extend %weatherContainer;
+}

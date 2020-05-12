@@ -7,3 +7,11 @@ export const configApiWeather = {
     lang: "es",
     units: "metric"
 }
+
+export const configApiTime = {
+    url: "http://api.timezonedb.com/v2.1/get-time-zone",
+    by: "zone",
+    zone: "ART",
+    format: "json",
+    api_key: "UIYH9M1PZSC9"
+}
