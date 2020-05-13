@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {configApiWeather} from '../../Config/config';
 import Input from '../input-pattern/input';
 import Button from '../button-pattern/button';
-import Alert from '../alert/alert';
 
 import './_weather-form.scss';
 
@@ -11,6 +10,16 @@ const WeatherForm = (props) => {
     const [cityAlert, setCityAlert] = useState(false);
     const [countryAlert, setCountryAlert] = useState(false);
 
+    const handleCity = e => {
+        setCityAlert(false);
+        console.log(e.target.value)
+    }
+
+    const handleCountry = e => {
+        setCountryAlert(false);
+        console.log(e.target.value)
+    }
+
     const getFetchData = async event => {
 
         event.preventDefault();
@@ -18,28 +27,30 @@ const WeatherForm = (props) => {
         const [city, country] = event.target.elements;
         const cityValue = city.value;
         const countryValue = country.value;
-        
+
+        if(cityValue === ''){
+            setCityAlert(true);
+            return false;
+        }
+
+        if (countryValue === ''){
+            setCountryAlert(true);
+            return false;
+        }
+
         try{
-            if(cityValue === ''){
-                setCityAlert(true);
-                return false;
-            }
-            if (countryValue === ''){
-                setCountryAlert(true);
-                return false;
-            } else{
-                props.setButtonClicked(true);
+            props.setButtonClicked(true);
             
-                const res = await fetch(`${configApiWeather.url}?q=${cityValue}&${countryValue}&lang=${configApiWeather.lang}&units=${configApiWeather.units}&appid=${configApiWeather.api_key}`);
-                const data = await res.json();
+            const res = await fetch(`${configApiWeather.url}?q=${cityValue}&${countryValue}&lang=${configApiWeather.lang}&units=${configApiWeather.units}&appid=${configApiWeather.api_key}`);
+            const data = await res.json();
 
-                if(data.cod == 404){
-                    alert("No se encontró la ciudad o país, por favor intentá de nuevo :)");
-                    return;
-                }
-
-                props.setClimate(data);
+            if(data.cod == 404){
+                alert("No se encontró la ciudad o país, por favor intentá de nuevo :)");
+                return;
             }
+
+            props.setClimate(data);
+            
         } catch (error){
             console.log(error);
             alert("Hubo un error para procesar tu solicitud, intentá nuevamente.");
@@ -50,12 +61,24 @@ const WeatherForm = (props) => {
         <div className="container">
             <form className="container__form" onSubmit={getFetchData}>
                 <div className="container__form__inputOne">
-                    <Input name="city" placeholder="Escribe el nombre de tu ciudad" type="text" p="una ciudad." autoFocus/>
-                    {cityAlert && <Alert p="una ciudad"/>}
+                    <Input name="city"
+                        placeholder="Escribe el nombre de tu ciudad"
+                        type="text" p="una ciudad."
+                        onChange={handleCity}
+                        autoFocus
+                        alert={cityAlert}
+                        message="Debe ingresar una ciudad."
+                        />
                 </div>
                 <div className="container__form__inputTwo">
-                    <Input name="country" placeholder="Escribe el nombre de tu país" type="text" p="un país."/>
-                    {countryAlert && <Alert p="un país"/>}
+                    <Input name="country"
+                    placeholder="Escribe el nombre de tu país"
+                    type="text"
+                    p="un país."
+                    onChange={handleCountry}
+                    alert={countryAlert}
+                    message="Debe ingresar un país."
+                    />
                 </div>
                 <Button/>
             </form>
