@@ -1,0 +1,16 @@
+.alert{
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__p{
+        font-size: 0.9rem;
+        color: red;
+    }
+
+    &__icon{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}

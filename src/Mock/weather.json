@@ -1,32 +1,15 @@
-[
-    {
-        "main": {
-                "temp": 17,
-                "temp_min": 15.56,
-                "temp_max": 18.89,
-                "humidity": 55
-        },
-        "weather": [
-            {
-                "id": 800,
-                "description": "precipitaciones"
-            }
-        ],
-        "name": "Córdoba"
+{
+    "main": {
+            "temp": 17,
+            "temp_min": 15.56,
+            "temp_max": 18.89,
+            "humidity": 55
     },
-    {
-        "main": {
-                "temp": 21,
-                "temp_min": 21,
-                "temp_max": 22,
-                "humidity": 60
-            },
-        "weather": [
-            {
-                "id": 800,
-                "description": "cielo nublado"
-            }
-        ],
-        "name": "Córdoba"
-    }
-]
+    "weather": [
+        {
+            "id": 800,
+            "description": "precipitaciones"
+        }
+    ],
+    "name": "Córdoba"
+}

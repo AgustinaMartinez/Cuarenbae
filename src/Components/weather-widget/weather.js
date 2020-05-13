@@ -4,13 +4,12 @@ import {getWeather} from '../../Services/weather-service';
 import weather from '../../Mock/weather.json';
 import './_weather.scss';
 
-const Weather = (props) => {
+const Weather = props => {
     
     const [weather, setWeather] = useState({});
 
     const getData = async () => {
         const data = await getWeather();
-        console.log(data);
         setWeather({
             id: data.id,
             city: data.name,

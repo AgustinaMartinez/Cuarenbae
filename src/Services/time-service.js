@@ -8,6 +8,6 @@ export const getFetchData = async () => {
 }
 
 export const getTime = () => {
-    console.log(process.env.TIME_MOCK, "holis")
-    return process.env.TIME_MOCK === "true" ? timeMock : getFetchData();
+    console.log(process.env.REACT_APP_MOCK_TIME, "holis")
+    return process.env.REACT_APP_MOCK_TIME === "true" ? timeMock : getFetchData();
 }

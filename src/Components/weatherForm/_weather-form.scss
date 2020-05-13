@@ -4,5 +4,12 @@
 
     &__form{
         @extend %weatherContainer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__inputTwo{
+            padding: 1rem 0;
+        }
     }
 }

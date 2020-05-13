@@ -1,8 +1,5 @@
 @import '../../Styles-patterns/patterns';
 
-.container{
-
-    &__button{
-        @extend %buttonForm;
-    }
+.button{
+    @extend %buttonForm;
 }
