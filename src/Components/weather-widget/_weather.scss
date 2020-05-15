@@ -41,5 +41,6 @@
 
     &__button{
         @extend %buttonWidget;
+        margin-top: 1.5rem;
     }
 }

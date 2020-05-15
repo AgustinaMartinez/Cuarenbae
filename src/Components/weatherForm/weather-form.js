@@ -12,12 +12,10 @@ const WeatherForm = (props) => {
 
     const handleCity = e => {
         setCityAlert(false);
-        console.log(e.target.value)
     }
 
     const handleCountry = e => {
         setCountryAlert(false);
-        console.log(e.target.value)
     }
 
     const getFetchData = async event => {
@@ -50,7 +48,7 @@ const WeatherForm = (props) => {
             }
 
             props.setClimate(data);
-            
+
         } catch (error){
             console.log(error);
             alert("Hubo un error para procesar tu solicitud, intentá nuevamente.");
@@ -62,25 +60,24 @@ const WeatherForm = (props) => {
             <form className="container__form" onSubmit={getFetchData}>
                 <div className="container__form__inputOne">
                     <Input name="city"
-                        placeholder="Escribe el nombre de tu ciudad"
-                        type="text" p="una ciudad."
-                        onChange={handleCity}
-                        autoFocus
-                        alert={cityAlert}
-                        message="Debe ingresar una ciudad."
+                            placeholder="Escribe el nombre de tu ciudad"
+                            type="text"
+                            onChange={handleCity}
+                            autoFocus
+                            alert={cityAlert}
+                            message="Debe ingresar una ciudad."
                         />
                 </div>
                 <div className="container__form__inputTwo">
                     <Input name="country"
-                    placeholder="Escribe el nombre de tu país"
-                    type="text"
-                    p="un país."
-                    onChange={handleCountry}
-                    alert={countryAlert}
-                    message="Debe ingresar un país."
+                        placeholder="Escribe el nombre de tu país"
+                        type="text"
+                        onChange={handleCountry}
+                        alert={countryAlert}
+                        message="Debe ingresar un país."
                     />
                 </div>
-                <Button/>
+                <Button name="Conocer clima"/>
             </form>
         </div>
     )

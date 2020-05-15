@@ -126,14 +126,14 @@
                         color: black;
                         border: 0;
                         background-image: linear-gradient(currentColor, currentColor);
-                        background-position: 0% 100%;
+                        background-position:50% 100%;
                         background-repeat: no-repeat;
                         background-size: 0% 2px;
                         transition: background-size .3s;
         
                         &:hover{
                             color: #B00056;
-                            background-size: 100% 2px;
+                            background-size: 70% 2px;
                         }
                     }
                 }

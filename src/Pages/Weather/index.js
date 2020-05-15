@@ -15,7 +15,7 @@ const WeatherPage = () => {
             <Layout/>
             <div className="page__container">
                 <WeatherForm className="page__container__form" setClimate={setClimate} setButtonClicked={setButtonClicked}/>
-                <img src="/Assets/right_arrow.svg" alt="rigth arrow"></img>
+                <img src="/Assets/right_arrow.svg" alt="rigth arrow"/>
                 <WeatherInfo className="page__container__info" climate={climate} buttonClicked={buttonClicked} setButtonClicked={setButtonClicked}/>
             </div>
             <Footer/>

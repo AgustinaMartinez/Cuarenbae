@@ -3,7 +3,7 @@ import './_button.scss';
 
 const Button = props => (
     
-        <button className="button">Conocer clima</button>
+        <button className="button">{props.name}</button>
 );
 
 export default Button;

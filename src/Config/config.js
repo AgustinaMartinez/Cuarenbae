@@ -15,3 +15,10 @@ export const configApiTime = {
     format: "json",
     api_key: "UIYH9M1PZSC9"
 }
+
+export const configApiPhotos = {
+    url: "https://api.unsplash.com/photos/random/",
+    query: "coronavirus",
+    count: "10",
+    api_key: "ZJIb9mKmajs7KbwSRFk3afyEvZm52fxN2tnYVAKYkNA"
+}
