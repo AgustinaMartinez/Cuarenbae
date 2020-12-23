@@ -7,7 +7,7 @@ const sectionOne = () => (
     <h3 className="articles__title">Noticias</h3>
     <div className="articles__container">
       {news.map(item => {
-        return (    
+        return (
           <div key={item.id}>
             <img alt={item.alt} src={item.src}/>
             <p><span>{item.title} </span>{item.comment}</p>
